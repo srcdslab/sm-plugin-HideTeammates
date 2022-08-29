@@ -1,0 +1,28 @@
+project:
+  sourceknight: 0.1
+  name: HideTeammates
+  dependencies:
+    - name: sourcemod
+      type: tar
+      version: 1.11.0-git6906
+      location: https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6906-linux.tar.gz
+      unpack:
+      - source: /addons
+        dest: /addons
+    - name: multicolors
+      type: git
+      repo: https://github.com/srcdslab/sm-plugin-MultiColors
+      unpack:
+      - source: /addons/sourcemod/scripting/include
+        dest: /addons/sourcemod/scripting/include
+    - name: leader
+      type: git
+      repo: https://github.com/srcdslab/sm-plugin-Leader
+      unpack:
+      - source: /addons/sourcemod/scripting/include
+        dest: /addons/sourcemod/scripting/include
+  root: /
+  workdir: /addons/sourcemod/scripting
+  output: /addons/sourcemod/plugins
+  targets:
+    - HideTeammates
