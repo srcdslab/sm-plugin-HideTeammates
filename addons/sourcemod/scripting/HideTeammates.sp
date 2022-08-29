@@ -9,7 +9,6 @@
 
 ConVar sm_hide_enabled, sm_hide_maximum;
 
-Handle g_timer;
 Handle g_HideCookie;
 Handle g_Hide_EnableCookie;
 bool g_HidePlayers[MAXPLAYERS+1][MAXPLAYERS+1];
@@ -75,7 +74,7 @@ public void OnMapStart()
 	}
 	if (!bEnabled) return;
 
-	g_timer = CreateTimer(0.3, HideTimer, _,TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
+	CreateTimer(0.3, HideTimer, _,TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
 }
 
 public void OnClientPutInServer(int client) 
@@ -134,12 +133,6 @@ public void OnConVarChange(Handle hCvar, const char[] oldValue, const char[] new
 
 	if (hCvar == sm_hide_enabled)
 	{
-		if (g_timer != INVALID_HANDLE)
-		{
-			KillTimer(g_timer);
-			g_timer = INVALID_HANDLE;
-		}
-
 		bEnabled = sm_hide_enabled.BoolValue;
 
 		for (int client = 1; client <= MaxClients; client++)
@@ -164,7 +157,7 @@ public void OnConVarChange(Handle hCvar, const char[] oldValue, const char[] new
 		}
 		if (bEnabled)
 		{
-			g_timer = CreateTimer(0.3, HideTimer, _, TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
+			CreateTimer(0.3, HideTimer, _, TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
 		}
 	}
 }
@@ -279,12 +272,8 @@ public bool SetClientHide(int client, bool hide_enable, int hide_distance)
 
 public Action HideTimer(Handle timer)
 {
-	if (timer != g_timer || !bEnabled)
-	{
-		KillTimer(timer);
-		g_timer = INVALID_HANDLE;
+	if (!bEnabled)
 		return Plugin_Stop;
-	}
 
 	for (int client = 1; client <= MaxClients; client++)
 	{
@@ -323,7 +312,7 @@ public Action HideTimer(Handle timer)
 			}
 		}
 	}
-	return Plugin_Handled;
+	return Plugin_Continue;
 }
 
 public Action Hook_SetTransmit(int target, int client)
