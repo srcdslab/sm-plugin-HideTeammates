@@ -28,7 +28,7 @@ public Plugin myinfo =
 	name = "Hide Teammates",
 	author = "DarkerZ [RUS]",
 	description = "Hide players based on individual distances",
-	version = "1.6.1L",
+	version = "1.6.2",
 	url = "dark-skill.ru"
 }
 
@@ -60,6 +60,8 @@ public void OnPluginStart()
 	}
 
 	AutoExecConfig(true);
+
+	HookEvent("player_death", OnPlayerDeath);
 }
 
 public void OnMapStart()
@@ -164,6 +166,18 @@ public void OnConVarChange(Handle hCvar, const char[] oldValue, const char[] new
 		{
 			g_timer = CreateTimer(0.3, HideTimer, _, TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
 		}
+	}
+}
+
+public void OnPlayerDeath(Event event, const char[] name, bool dontBroadcast)
+{
+	int victim = GetClientOfUserId(event.GetInt("userid"));
+	if (!victim)
+		return;
+
+	for (int target = 1; target <= MaxClients; target++)
+	{
+		g_HidePlayers[victim][target] = false;
 	}
 }
 
