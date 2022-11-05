@@ -3,8 +3,9 @@
 
 #include <sourcemod>
 #include <sdkhooks>
-#include <multicolors>
 #include <clientprefs>
+
+#include <multicolors>
 #tryinclude <leader>
 
 ConVar sm_hide_enabled, sm_hide_maximum;

@@ -1,5 +1,10 @@
-.venv
-venv
-plugins/
+build/
+release/
+
+.DS_Store
+.vscode
+
 *.smx
+plugins/
 .sourceknight
+.venv
