@@ -10,8 +10,8 @@
 
 ConVar sm_hide_enabled, sm_hide_maximum;
 
-Handle g_HideCookie;
-Handle g_Hide_EnableCookie;
+Cookie g_HideCookie;
+Cookie g_Hide_EnableCookie;
 bool g_HidePlayers[MAXPLAYERS+1][MAXPLAYERS+1];
 bool bEnabled = true;
 
@@ -28,7 +28,7 @@ public Plugin myinfo =
 	name = "Hide Teammates",
 	author = "DarkerZ [RUS]",
 	description = "Hide players based on individual distances",
-	version = "1.6.2",
+	version = "1.6.3",
 	url = "dark-skill.ru"
 }
 
@@ -43,8 +43,8 @@ public void OnPluginStart()
 
 	LoadTranslations("HideTeammates.phrases");
 
-	g_HideCookie = RegClientCookie("cookie_hide_teammates", "Hide Teammates", CookieAccess_Protected);
-	g_Hide_EnableCookie = RegClientCookie("cookie_hide_teammates_enable", "Hide Teammates Enable", CookieAccess_Protected);
+	g_HideCookie = new Cookie("cookie_hide_teammates", "Hide Teammates", CookieAccess_Protected);
+	g_Hide_EnableCookie = new Cookie("cookie_hide_teammates_enable", "Hide Teammates Enable", CookieAccess_Protected);
 	SetCookieMenuItem(PrefMenu, 0, "Hide Teammates");
 
 	for (int client = 1; client <= MaxClients; client++)
@@ -90,7 +90,7 @@ public void OnClientCookiesCached(int client)
 	
 	char sCookieValue[4];
 	
-	GetClientCookie(client, g_Hide_EnableCookie, sCookieValue, sizeof(sCookieValue));
+	g_Hide_EnableCookie.Get(client, sCookieValue, sizeof(sCookieValue));
 	
 	if (!StrEqual(sCookieValue, ""))
 	{
@@ -101,7 +101,7 @@ public void OnClientCookiesCached(int client)
 		g_bHide[client] = false;
 	}
 	
-	GetClientCookie(client, g_HideCookie, sCookieValue, sizeof(sCookieValue));
+	g_HideCookie.Get(client, sCookieValue, sizeof(sCookieValue));
 	
 	if (!StrEqual(sCookieValue, ""))
 	{
@@ -128,7 +128,7 @@ public void OnClientDisconnect(int client)
 	SDKUnhook(client, SDKHook_SetTransmit, Hook_SetTransmit);
 }
 
-public void OnConVarChange(Handle hCvar, const char[] oldValue, const char[] newValue)
+public void OnConVarChange(ConVar hCvar, const char[] oldValue, const char[] newValue)
 {
 	if (StrEqual(oldValue, newValue)) return;
 
@@ -262,10 +262,10 @@ public bool SetClientHide(int client, bool hide_enable, int hide_distance)
 		g_bHide[client] = hide_enable;
 		g_iHide[client] = hide_distance;
 		g_iHideP2[client] = hide_distance*hide_distance;
-		SetClientCookie(client, g_Hide_EnableCookie, (g_bHide[client]) ? "1" : "0");
+		g_Hide_EnableCookie.Set(client, (g_bHide[client]) ? "1" : "0");
 		char sCookieValue[4];
 		FormatEx(sCookieValue, sizeof(sCookieValue), "%d", g_iHide[client]);
-		SetClientCookie(client, g_HideCookie, sCookieValue);
+		g_HideCookie.Set(client, sCookieValue);
 		return true;
 	}
 	return false;
@@ -352,7 +352,7 @@ void DisplaySettingsMenu(int client)
 		return;
 	}
 	
-	Menu prefmenu = CreateMenu(PrefMenuHandler, MENU_ACTIONS_DEFAULT);
+	Menu prefmenu = new Menu(PrefMenuHandler, MENU_ACTIONS_DEFAULT);
 	
 	char szMenuTitle[64];
 	Format(szMenuTitle, sizeof(szMenuTitle), "%T", "HideT Menu Title", client);
@@ -394,7 +394,7 @@ public int PrefMenuHandler(Menu prefmenu, MenuAction actions, int client, int it
 	{
 		char preference[9];
 		
-		GetMenuItem(prefmenu, item, preference, sizeof(preference));
+		prefmenu.GetItem(item, preference, sizeof(preference));
 		
 		if (StrEqual(preference, "disable"))
 		{
@@ -429,7 +429,7 @@ public int PrefMenuHandler(Menu prefmenu, MenuAction actions, int client, int it
 	}
 	else if (actions == MenuAction_End)
 	{
-		CloseHandle(prefmenu);
+		delete prefmenu;
 	}
 	return 0;
 }
