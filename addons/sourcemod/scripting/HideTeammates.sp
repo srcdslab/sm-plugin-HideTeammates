@@ -28,7 +28,7 @@ public Plugin myinfo =
 	name = "Hide Teammates",
 	author = "DarkerZ [RUS]",
 	description = "Hide players based on individual distances",
-	version = "1.6.3",
+	version = "1.6.4",
 	url = "dark-skill.ru"
 }
 
