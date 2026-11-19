@@ -9,6 +9,12 @@
 		"de"			"{lightblue}[{green}HT{lightblue}]"
 		"pt"			"{lightblue}[{green}HT{lightblue}]"
 		"chi"			"{lightblue}[{green}HT{lightblue}]"
+		"pl"			"{lightblue}[{green}HT{lightblue}]"
+		"tr"			"{lightblue}[{green}HT{lightblue}]"
+		"it"			"{lightblue}[{green}HT{lightblue}]"
+		"ua"			"{lightblue}[{green}HT{lightblue}]"
+		"zho"			"{lightblue}[{green}HT{lightblue}]"
+		"cze"			"{lightblue}[{green}HT{lightblue}]"
 	}
 	"HideT Disabled"
 	{
@@ -19,6 +25,12 @@
 		"de"			"{default}Der Hide-Befehl ist derzeit {red}deaktiviert"
 		"pt"			"{default}O comando hide está {red}desativado"
 		"chi"			"{default}隐藏命令当前已{red}禁用"
+		"pl"			"{default}Komenda hide jest obecnie {red}wyłączona"
+		"tr"			"{default}Hide komutu şu anda {red}devre dışı"
+		"it"			"{default}Il comando hide è attualmente {red}disattivato"
+		"ua"			"{default}Команда hide наразі {red}вимкнена"
+		"zho"			"{default}隱藏指令目前{red}已停用"
+		"cze"			"{default}Příkaz hide je momentálně {red}vypnutý"
 	}
 	"HideT Wait"
 	{
@@ -29,6 +41,12 @@
 		"de"			"{orange}Bitte warte, deine Einstellungen wurden noch nicht geladen..."
 		"pt"			"{orange}Aguarde, suas configurações ainda não foram carregadas..."
 		"chi"			"{orange}请稍候，你的设置尚未加载..."
+		"pl"			"{orange}Poczekaj, twoje ustawienia nie zostały jeszcze wczytane..."
+		"tr"			"{orange}Lütfen bekle, ayarların henüz yüklenmedi..."
+		"it"			"{orange}Attendi, le tue impostazioni non sono ancora state caricate..."
+		"ua"			"{orange}Зачекайте, ваші налаштування ще не завантажено..."
+		"zho"			"{orange}請稍候，你的設定尚未載入..."
+		"cze"			"{orange}Počkej prosím, tvoje nastavení ještě nebylo načteno..."
 	}
 	"HideT Client Enable"
 	{
@@ -40,6 +58,12 @@
 		"de"			"{default}Teammates im Umkreis von {lightblue}{1} {default}Einheiten ausgeblendet"
 		"pt"			"{default}Ocultando aliados num raio de {lightblue}{1} {default}unidades"
 		"chi"			"{default}正在隐藏 {lightblue}{1} {default}单位内的队友"
+		"pl"			"{default}Ukrywanie graczy z drużyny w promieniu {lightblue}{1} {default}jednostek"
+		"tr"			"{default}Takım arkadaşları {lightblue}{1} {default}birim mesafe içinde gizleniyor"
+		"it"			"{default}Compagni di squadra nascosti entro {lightblue}{1} {default}unità"
+		"ua"			"{default}Союзників приховано в радіусі {lightblue}{1} {default}одиниць"
+		"zho"			"{default}正在隱藏 {lightblue}{1} {default}單位內的隊友"
+		"cze"			"{default}Skrývám spoluhráče do vzdálenosti {lightblue}{1} {default}jednotek"
 	}
 	"HideT Client Enable All Map"
 	{
@@ -50,6 +74,12 @@
 		"de"			"{default}Teammates auf der {lightblue}gesamten Map ausgeblendet"
 		"pt"			"{default}Ocultando aliados em {lightblue}todo o mapa"
 		"chi"			"{default}正在隐藏{lightblue}全图{default}队友"
+		"pl"			"{default}Ukrywanie graczy z drużyny na {lightblue}całej mapie"
+		"tr"			"{default}Takım arkadaşları {lightblue}tüm haritada {default}gizleniyor"
+		"it"			"{default}Compagni di squadra nascosti su {lightblue}tutta la mappa"
+		"ua"			"{default}Союзників приховано на {lightblue}всій мапі"
+		"zho"			"{default}正在隱藏{lightblue}整張地圖{default}的隊友"
+		"cze"			"{default}Skrývám spoluhráče na {lightblue}celé mapě"
 	}
 	"HideT Client Wrong"
 	{
@@ -61,6 +91,12 @@
 		"de"			"{red}Ungültige Distanz{default}, erlaubt ist {lime}0{default}-{lime}{1}"
 		"pt"			"{red}Distância inválida{default}, deve estar entre {lime}0{default}-{lime}{1}"
 		"chi"			"{red}距离输入错误{default}，范围应为 {lime}0{default}-{lime}{1}"
+		"pl"			"{red}Nieprawidłowa odległość{default}, zakres musi wynosić {lime}0{default}-{lime}{1}"
+		"tr"			"{red}Geçersiz mesafe{default}, aralık {lime}0{default}-{lime}{1} arasında olmalı"
+		"it"			"{red}Distanza non valida{default}, deve essere compresa tra {lime}0{default}-{lime}{1}"
+		"ua"			"{red}Неправильна відстань{default}, діапазон має бути від {lime}0{default} до {lime}{1}"
+		"zho"			"{red}距離輸入錯誤{default}，範圍必須在 {lime}0{default}-{lime}{1} 之間"
+		"cze"			"{red}Neplatná vzdálenost{default}, rozsah musí být {lime}0{default}-{lime}{1}"
 	}
 	"HideT Client Disable"
 	{
@@ -71,6 +107,12 @@
 		"de"			"{red}Alle Teammates {default}wieder sichtbar"
 		"pt"			"{red}Mostrando {default}todos os aliados"
 		"chi"			"{red}已显示{default}所有队友"
+		"pl"			"{red}Pokazywanie {default}wszystkich graczy z drużyny"
+		"tr"			"{red}Tüm {default}takım arkadaşları gösteriliyor"
+		"it"			"{red}Mostro {default}tutti i compagni di squadra"
+		"ua"			"{red}Показано {default}всіх союзників"
+		"zho"			"{red}顯示{default}所有隊友"
+		"cze"			"{red}Zobrazuji {default}všechny spoluhráče"
 	}
 	"HideT Cookie Menu"
 	{
@@ -81,6 +123,12 @@
 		"de"			"Teammates ausblenden"
 		"pt"			"Ocultar aliados"
 		"chi"			"隐藏队友"
+		"pl"			"Ukryj graczy z drużyny"
+		"tr"			"Takım Arkadaşlarını Gizle"
+		"it"			"Nascondi compagni di squadra"
+		"ua"			"Приховати союзників"
+		"zho"			"隱藏隊友"
+		"cze"			"Skrýt spoluhráče"
 	}
 	"HideT Menu Title"
 	{
@@ -91,6 +139,12 @@
 		"de"			"Menü: Teammates ausblenden"
 		"pt"			"Menu de ocultar aliados"
 		"chi"			"隐藏队友菜单"
+		"pl"			"Menu ukrywania graczy z drużyny"
+		"tr"			"Takım Arkadaşlarını Gizle Menüsü"
+		"it"			"Menu nascondi compagni di squadra"
+		"ua"			"Меню приховування союзників"
+		"zho"			"隱藏隊友選單"
+		"cze"			"Menu skrývání spoluhráčů"
 	}
 	"HideT Menu Hide"
 	{
@@ -101,6 +155,12 @@
 		"de"			"Teammates ausblenden"
 		"pt"			"Ocultar aliados"
 		"chi"			"隐藏队友"
+		"pl"			"Ukryj graczy z drużyny"
+		"tr"			"Takım Arkadaşlarını Gizle"
+		"it"			"Nascondi compagni di squadra"
+		"ua"			"Приховати союзників"
+		"zho"			"隱藏隊友"
+		"cze"			"Skrýt spoluhráče"
 	}
 	"HideT Menu Show"
 	{
@@ -111,6 +171,12 @@
 		"de"			"Teammates anzeigen"
 		"pt"			"Mostrar aliados"
 		"chi"			"显示队友"
+		"pl"			"Pokaż graczy z drużyny"
+		"tr"			"Takım Arkadaşlarını Göster"
+		"it"			"Mostra compagni di squadra"
+		"ua"			"Показати союзників"
+		"zho"			"顯示隊友"
+		"cze"			"Zobrazit spoluhráče"
 	}
 	"HideT AdjustDesc"
 	{
@@ -123,6 +189,42 @@
 		"de"			"Du kannst alle Teammates ausblenden\noder nur innerhalb einer Distanz\nBenutze \"!hide <Wert>\"\n *-1: Einblenden\n *0: Alle Teammates ausblenden\n *1 bis {1}: Distanz"
 		"pt"			"Você pode ocultar todos os aliados\nou dentro de uma distância\nUse \"!hide <valor>\"\n *-1: Mostrar\n *0: Ocultar todos os aliados\n *de 1 a {1}: Distância"
 		"chi"			"你可以隐藏所有队友\n或隐藏一定距离内的队友\n使用\"!hide <数值>\"\n *-1：取消隐藏\n *0：隐藏所有队友\n *1 到 {1}：距离"
+		"pl"			"Możesz ukryć wszystkich graczy z drużyny
+lub tylko w pewnej odległości
+Użyj \"!hide <wartość>\"
+ *-1: Pokaż
+ *0: Ukryj wszystkich sojuszników
+ *od 1 do {1}: Odległość"
+		"tr"			"Tüm takım arkadaşlarını
+veya belirli bir mesafedekileri gizleyebilirsin
+\"!hide <değer>\" kullan
+ *-1: Göster
+ *0: Tüm takım arkadaşlarını gizle
+ *1 ile {1} arası: Mesafe"
+		"it"			"Puoi nascondere tutti i compagni di squadra
+o solo entro una distanza
+Usa \"!hide <valore>\"
+ *-1: Mostra
+ *0: Nascondi tutti gli alleati
+ *da 1 a {1}: Distanza"
+		"ua"			"Можна приховати всіх союзників
+або лише в межах відстані
+Використовуйте \"!hide <значення>\"
+ *-1: Показати
+ *0: Приховати всіх союзників
+ *від 1 до {1}: Відстань"
+		"zho"			"你可以隱藏所有隊友
+或只隱藏一定距離內的隊友
+使用 \"!hide <數值>\"
+ *-1：顯示
+ *0：隱藏所有隊友
+ *1 到 {1}：距離"
+		"cze"			"Můžeš skrýt všechny spoluhráče
+nebo jen do určité vzdálenosti
+Použij \"!hide <hodnota>\"
+ *-1: Zobrazit
+ *0: Skrýt všechny spoluhráče
+ *od 1 do {1}: Vzdálenost"
 	}
 	"HideT Menu Distance"
 	{
@@ -135,6 +237,12 @@
 		"de"			"Distanz: {1}"
 		"pt"			"Distância: {1}"
 		"chi"			"距离：{1}"
+		"pl"			"Odległość: {1}"
+		"tr"			"Mesafe: {1}"
+		"it"			"Distanza: {1}"
+		"ua"			"Відстань: {1}"
+		"zho"			"距離：{1}"
+		"cze"			"Vzdálenost: {1}"
 	}
 	"HideT Menu All Map"
 	{
@@ -145,5 +253,11 @@
 		"de"			"Distanz: Alle Teammates"
 		"pt"			"Distância: todos os aliados"
 		"chi"			"距离：全部队友"
+		"pl"			"Odległość: wszyscy gracze z drużyny"
+		"tr"			"Mesafe: Tüm Takım Arkadaşları"
+		"it"			"Distanza: tutti i compagni di squadra"
+		"ua"			"Відстань: усі союзники"
+		"zho"			"距離：所有隊友"
+		"cze"			"Vzdálenost: všichni spoluhráči"
 	}
 }
