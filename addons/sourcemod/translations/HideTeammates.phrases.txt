@@ -189,42 +189,12 @@
 		"de"			"Du kannst alle Teammates ausblenden\noder nur innerhalb einer Distanz\nBenutze \"!hide <Wert>\"\n *-1: Einblenden\n *0: Alle Teammates ausblenden\n *1 bis {1}: Distanz"
 		"pt"			"Você pode ocultar todos os aliados\nou dentro de uma distância\nUse \"!hide <valor>\"\n *-1: Mostrar\n *0: Ocultar todos os aliados\n *de 1 a {1}: Distância"
 		"chi"			"你可以隐藏所有队友\n或隐藏一定距离内的队友\n使用\"!hide <数值>\"\n *-1：取消隐藏\n *0：隐藏所有队友\n *1 到 {1}：距离"
-		"pl"			"Możesz ukryć wszystkich graczy z drużyny
-lub tylko w pewnej odległości
-Użyj \"!hide <wartość>\"
- *-1: Pokaż
- *0: Ukryj wszystkich sojuszników
- *od 1 do {1}: Odległość"
-		"tr"			"Tüm takım arkadaşlarını
-veya belirli bir mesafedekileri gizleyebilirsin
-\"!hide <değer>\" kullan
- *-1: Göster
- *0: Tüm takım arkadaşlarını gizle
- *1 ile {1} arası: Mesafe"
-		"it"			"Puoi nascondere tutti i compagni di squadra
-o solo entro una distanza
-Usa \"!hide <valore>\"
- *-1: Mostra
- *0: Nascondi tutti gli alleati
- *da 1 a {1}: Distanza"
-		"ua"			"Можна приховати всіх союзників
-або лише в межах відстані
-Використовуйте \"!hide <значення>\"
- *-1: Показати
- *0: Приховати всіх союзників
- *від 1 до {1}: Відстань"
-		"zho"			"你可以隱藏所有隊友
-或只隱藏一定距離內的隊友
-使用 \"!hide <數值>\"
- *-1：顯示
- *0：隱藏所有隊友
- *1 到 {1}：距離"
-		"cze"			"Můžeš skrýt všechny spoluhráče
-nebo jen do určité vzdálenosti
-Použij \"!hide <hodnota>\"
- *-1: Zobrazit
- *0: Skrýt všechny spoluhráče
- *od 1 do {1}: Vzdálenost"
+		"pl"			"Możesz ukryć wszystkich graczy z drużyny\nlub tylko w pewnej odległości\nUżyj \"!hide <wartość>\"\n *-1: Pokaż\n *0: Ukryj wszystkich sojuszników\n *od 1 do {1}: Odległość"
+		"tr"			"Tüm takım arkadaşlarını\nveya belirli bir mesafedekileri gizleyebilirsin\n\"!hide <değer>\" kullan\n *-1: Göster\n *0: Tüm takım arkadaşlarını gizle\n *1 ile {1} arası: Mesafe"
+		"it"			"Puoi nascondere tutti i compagni di squadra\no solo entro una distanza\nUsa \"!hide <valore>\"\n *-1: Mostra\n *0: Nascondi tutti gli alleati\n *da 1 a {1}: Distanza"
+		"ua"			"Можна приховати всіх союзників\nабо лише в межах відстані\nВикористовуйте \"!hide <значення>\"\n *-1: Показати\n *0: Приховати всіх союзників\n *від 1 до {1}: Відстань"
+		"zho"			"你可以隱藏所有隊友\n或只隱藏一定距離內的隊友\n使用 \"!hide <數值>\"\n *-1：顯示\n *0：隱藏所有隊友\n *1 到 {1}：距離"
+		"cze"			"Můžeš skrýt všechny spoluhráče\nnebo jen do určité vzdálenosti\nPoužij \"!hide <hodnota>\"\n *-1: Zobrazit\n *0: Skrýt všechny spoluhráče\n *od 1 do {1}: Vzdálenost"
 	}
 	"HideT Menu Distance"
 	{
